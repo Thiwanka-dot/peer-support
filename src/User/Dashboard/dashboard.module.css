@@ -1,0 +1,369 @@
+.dashboard {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 65px;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*user*/
+
+.user,
+.data{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.userDetails{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    background: #cccccc4e;
+}
+
+.userDetails img{
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #00C4EE;
+}
+
+.userInfo{
+    padding-left: 20px;
+    border-left: 2px solid #00C4EE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.userInfo .issue{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.userInfo ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+}
+
+.userInfo ul li{
+    background: #00C4EE;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.userInfo button{
+    background: #34DCA7;
+    border: none;
+    padding: 8px 10px;
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.userInfo p span{
+    font-weight: 800;
+}
+
+.userInfo button:hover,
+.actBtns button:hover,
+.action button:hover,
+.title button:hover,
+.modalBtns button:hover,
+.divide button:hover,
+.emoBtns button:hover,
+.deleteAccount button:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.activity,
+.post,
+.mood,
+.comPost,
+.deleteAccount{
+    padding: 20px;
+    background: #cccccc4e;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.activity .actBtns{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.actBtns button{
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    background: #34DCA7;
+    font-weight: bold;
+}
+
+.actBtns button a{
+    text-decoration: none;
+}
+
+/*Data*/
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title button{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #34DCA7;
+    font-weight: bold;
+}
+
+.title button a{
+    text-decoration: none;
+}
+
+.comPostList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*post*/
+
+.postList {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.postInfo{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #00C4EE;
+}
+
+.postInfo h3{
+    color: #29ad83;
+}
+
+.postInfo p,
+.postInfo span{
+    font-size: 14px;
+}
+
+.date{
+    margin-top: 5px;
+}
+
+/*modal*/
+
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 50px;
+}
+
+.modal,
+.modal2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.modal2 p {
+    height: 200px;
+    background: #cccccc4e;
+    padding: 5px;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.modal h2,
+.modal2 h2 {
+    margin-top: 0;
+}
+
+.modal .divide,
+.modal2 .divide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divide button{
+    color: white;
+    background: #f94242;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formInp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form input,
+.form textarea {
+    padding: 5px 10px;
+    border: 1px solid #00C4EE;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.modalBtns {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.modalBtns button {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #00C4EE;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.modalBtns .saveBtn{
+    background: #34DCA7;
+}
+
+.emoBtns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.emoBtns button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background: #00C4EE;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.emoBtns button.active {
+    background: #34DCA7;
+}
+
+.deleteAccount button{
+    background: red;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+}
+
+@media (max-width:1000px) {
+    .user,
+    .data{
+        grid-template-columns: 1fr;
+    }
+
+    .activity .actBtns{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .postList{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 800px){
+    h1{
+        font-size: 1.6rem;
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
+
+    h3{
+        font-size: 1.1rem;
+    }
+
+    .userDetails{
+        flex-direction: column;
+        align-items: center;
+    }
+    .userDetails img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .userInfo{
+        border-left: none;
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width: 600px){
+    .postList{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -1,0 +1,1 @@
+run the main server.js to run the contact form sending email

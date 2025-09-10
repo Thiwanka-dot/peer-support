@@ -1,0 +1,227 @@
+h3{
+    margin-bottom: 15px;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 65px;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* header */
+.header{
+    background: #00C4EE;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.adminSection{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.createAdmin,
+.adminTable{
+    background: #cccccc4e;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.createAdmin{
+    height: fit-content;
+}
+
+.createAdmin h3{
+    padding-top: 1rem;
+}
+
+.createAdmin form{
+    background: #00C4EE;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.createAdmin form label{
+    font-weight: bold;
+}
+
+.createAdmin .intGrp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.createAdmin .intFld{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.createAdmin form input,
+.createAdmin form textarea{
+    width: 100%;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.createAdmin form button{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    background: #34DCA7;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.createAdmin form button:hover{
+    background: #2cc594;
+}
+
+/* table */
+.adminTable{
+    height: 100vh;
+}
+
+.adminTable table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.adminTable tbody .actionBtn{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.adminTable tbody .actionBtn .editBtn{
+    background: #00C4EE;
+}
+
+/* model */
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 50px;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.modal p {
+    height: 200px;
+    background: #cccccc4e;
+    padding: 5px;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.modal h2{
+    margin-top: 0;
+}
+
+.modal .divide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divide button{
+    color: white;
+    background: #f94242;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formInp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form input,
+.form textarea {
+    padding: 5px 10px;
+    border: 1px solid #00C4EE;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.modalBtns {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.modalBtns button {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #00C4EE;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.modalBtns .saveBtn{
+    background: #34DCA7;
+}
+
+.message {
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(254, 254, 125);
+    color: #333;
+}
+
+@media (max-width: 800px){
+    .adminSection{
+        grid-template-columns: 1fr;
+    }
+}

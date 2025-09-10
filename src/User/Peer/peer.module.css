@@ -1,0 +1,136 @@
+.dashboard {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 65px;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*search*/
+
+.searchUser{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.searchUser form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #cccccc4e;
+    padding: 5px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.searchUser form input{
+    border: 1px solid #00C4EE;
+    border-radius: 15px;
+    padding: 8px 15px;
+    width: 100%;
+}
+
+.searchUser img{
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #00C4EE;
+}
+
+.searchUser form button{
+    border: none;
+    border-radius: 50%;
+    padding: 8px 10px;
+    background: #34DCA7;
+}
+
+.searchUser form button:hover,
+.peerItem button:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*peer list*/
+
+.peerList{
+    background: #cccccc4e;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+}
+
+.peerItem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #00C4EE;
+    border-radius: 10px;
+}
+
+.peerItemContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.peerItem img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.peerItemContent p{
+    font-size: 14px;
+}
+
+.peerItemContent p span{
+    font-weight: bold;
+}
+
+.peerItemContent .connectBtn{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #34DCA7;
+    font-weight: 500;
+}
+
+.peerItem .disconnectBtn{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #dc3434;
+    color: white;
+    font-weight: 500;
+}
+
+@media (max-width:1000px) {
+    .peerList{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width:800px) {
+    .peerList{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:500px) {
+    .peerList{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

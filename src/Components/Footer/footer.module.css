@@ -1,0 +1,99 @@
+.footerLinks{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 50px;
+    gap: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+
+.copy{
+    text-align: center;
+    padding: 15px;
+}
+
+.footInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: last baseline;
+    text-align: left;
+}
+
+.footInfo img{
+    width: auto;
+    height: 70px;
+}
+
+.footInfo button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #34DCA7;
+    
+}
+
+.footInfo button a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footInfo button:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.links ul,
+.social ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.links ul li a{
+    text-decoration: none;
+}
+
+.links ul li:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #34DCA7;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+}
+.social ul li a svg {
+  color: #00C4EE !important;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 1000px){
+    .footerLinks{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footInfo,
+    .links,
+    .social{
+        text-align: center;
+        align-items: center;
+    }
+}

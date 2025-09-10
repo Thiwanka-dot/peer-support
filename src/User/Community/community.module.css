@@ -1,0 +1,134 @@
+.dashboard {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 65px;
+    height: 100vh;
+    overflow-y: auto;
+    gap: 20px;
+}
+
+/*community*/
+
+.section h2{
+    padding-bottom: 1rem;
+}
+
+.postCon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.userCon img{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #00C4EE;
+}
+
+.userCon button:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*search*/
+
+.searchCommunity{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.searchCommunity form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #cccccc4e;
+    padding: 5px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.searchCommunity form input{
+    border: 1px solid #00C4EE;
+    border-radius: 15px;
+    padding: 8px 15px;
+    width: 100%;
+}
+
+.searchCommunity form button{
+    border: none;
+    border-radius: 50%;
+    padding: 8px 10px;
+    background: #34DCA7;
+}
+
+.searchCommunity form button:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*post list*/
+
+.postList{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.postItem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background: #cccccc4e;
+    border-radius: 0 0 15px 15px;
+}
+
+.postItem span{
+    font-style: italic;
+}
+
+.postColor{
+    background: #00C4EE;
+    padding: 20px;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.userCon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.userCon .joinBtn{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    background: #34DCA7;
+    font-weight: bold;
+}
+
+.userCon .leaveBtn{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    background: #dc3434;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    .postList{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .postList{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
