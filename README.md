@@ -101,7 +101,6 @@ PeerConnect/
 ## 🧪 Testing
 
 - API testing with Postman
-- Unit testing (future implementation with Jest)
 - Manual user acceptance testing
 
 ---
